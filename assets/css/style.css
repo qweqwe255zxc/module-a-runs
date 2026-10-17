@@ -601,6 +601,8 @@ h2 {
     background: #fff;
     border-radius: 16px;
     box-shadow: 0 10px 30px rgba(31, 36, 48, .08);
+    margin-left: auto;
+    margin-right: auto;
 
     & .field {
         margin-bottom: 20px;
@@ -698,7 +700,7 @@ h2 {
 
 /* 11 адаптивность */
 
-@media (min-width:1000px) {
+@media (min-width:1200px) {
     .burger {
         display: none;
     }

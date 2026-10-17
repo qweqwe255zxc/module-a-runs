@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -11,16 +11,16 @@
 <body class="dark">
     <header class="header">
         <div class="container header__main">
-            <a href="index.html" id="logo"><img src="assets/images/logo.svg" alt="Открой Оренбуржье" width="210"
+            <a href="index.html" id="logo-dark"><img src="assets/images/logo.svg" alt="Открой Оренбуржье" width="210"
                     height="44"></a>
             <input type="checkbox" id="menu">
             <label for="menu" class="burger" title="Меню">☰</label>
             <nav id="main-nav-dark" class="nav">
-                <a href="#search-section" id="go-to-search">Поиск достопримечательностей</a>
-                <a href="catalog.html" id="nav-catalog">Каталог достопримечательностей</a>
-                <a href="profile.html" id="nav-profile">Личный кабинет</a>
-                <a href="login.html" id="nav-login" class="btn btn--sm">Войти</a>
-                <a href="register.html" id="nav-register" class="btn btn--light btn--sm ">Регистрация</a>
+                <a href="#search-section-dark" id="go-to-search-dark">Поиск достопримечательностей</a>
+                <a href="catalog.html" id="nav-catalog-dark">Каталог достопримечательностей</a>
+                <a href="profile.html" id="nav-profile-dark">Личный кабинет</a>
+                <a href="login.html" id="nav-login-dark" class="btn btn--sm">Войти</a>
+                <a href="register.html" id="nav-register-dark" class="btn btn--light btn--sm ">Регистрация</a>
             </nav>
         </div>
     </header>
@@ -30,13 +30,13 @@
             <img src="assets/images/step.jpg" alt="Открой Оренбуржье">
             <h1 class="hero__title">Открой Оренбуржье</h1>
             <form action="catalog.html" class="row">
-                <input type="search" id="search-input" list="hints" class="input" placeholder="Музеи">
-                <datalist id="hints">
+                <input type="search" id="search-input-dark" list="hints-dark" class="input" placeholder="Музеи">
+                <datalist id="hints-dark">
                     <option value="Памятники архитектуры"></option>
                     <option value="Природные объекты"></option>
                     <option value="Музеи"></option>
                 </datalist>
-                <button type="submit" id="search-button" class="btn">Найти</button>
+                <button type="submit" id="search-button-dark" class="btn">Найти</button>
             </form>
         </section>
 
@@ -79,25 +79,30 @@
                         <p class="muted">📍 51.7640, 55.1076</p>
                         <p class="muted">📷 24 фото</p>
                         <a href="landmark.html" class="btn btn--sm">Подробнее</a>
+                    </div>
                 </article>
                 <article class="card landmark-card stack">
-                    <img src="/assets/images/buzuluk-bor-2.jpg" alt="Бузулукский Бор" class="photo">
+                    <img src="/assets/images/buzuluk-bor-2.jpg" alt="Бузулукский бор" class="photo">
                     <div class="stack">
-                        <h3>Бузулукский Бор</h3>
+                        <h3>Бузулукский бор</h3>
                         <p class="muted">Природное место · Бузулукский район</p>
-                        <div class="rating"><img src="assets/icons/star-full.svg" alt="" width="16" height="16"><img
-                                src="assets/icons/star-full.svg" alt="" width="16" height="16"><img
-                                src="assets/icons/star-full.svg" alt="" width="16" height="16"><img
-                                src="assets/icons/star-full.svg" alt="" width="16" height="16"> 42 оценки</div>
+                        <div class="rating">
+                            <img src="assets/icons/star-full.svg" alt="" width="16" height="16">
+                            <img src="assets/icons/star-full.svg" alt="" width="16" height="16">
+                            <img src="assets/icons/star-full.svg" alt="" width="16" height="16">
+                            <img src="assets/icons/star-full.svg" alt="" width="16" height="16">
+                            42 оценки
+                        </div>
                         <p class="muted">Автор: borov_67</p>
                         <p class="muted">📍 54.7640, 52.1076</p>
                         <p class="muted">📷 23 фото</p>
                         <a href="landmark.html" class="btn btn--sm">Подробнее</a>
+                    </div>
                 </article>
                 <article class="card landmark-card stack">
                     <img src="/assets/images/sol-ileck.jpg" alt="Соль Илецк" class="photo">
                     <div class="stack">
-                        <h3>Соленые озера Соль Илецка</h3>
+                        <h3>Соленые озера Соль-Илецка</h3>
                         <p class="muted">Природное объект · Соль-Илецкий округ</p>
                         <div class="rating"><img src="assets/icons/star-full.svg" alt="" width="16" height="16"><img
                                 src="assets/icons/star-full.svg" alt="" width="16" height="16"><img
@@ -107,6 +112,7 @@
                         <p class="muted">📍 53.7640, 48.1076</p>
                         <p class="muted">📷 233 фото</p>
                         <a href="landmark.html" class="btn btn--sm">Подробнее</a>
+                    </div>
                 </article>
                 <article class="card landmark-card stack">
                     <img src="/assets/images/nac-derevnya.jpg" alt="Национальная деревня" class="photo">
@@ -121,6 +127,7 @@
                         <p class="muted">📍 56.7640, 42.1076</p>
                         <p class="muted">📷 3 фото</p>
                         <a href="landmark.html" class="btn btn--sm">Подробнее</a>
+                    </div>
                 </article>
                 <article class="card landmark-card stack">
                     <img src="/assets/images/museum.jpg" alt="Краеведческий музей" class="photo">
@@ -134,6 +141,7 @@
                         <p class="muted">📍 54.40, 51.76</p>
                         <p class="muted">📷 24 фото</p>
                         <a href="landmark.html" class="btn btn--sm">Подробнее</a>
+                    </div>
                 </article>
             </div>
         </section>
@@ -175,7 +183,7 @@
                         </div>
                     </article>
                 </div>
-                <div id="slider-indicators" class="dots">
+                <div id="slider-indicators-dark" class="dots">
                     <label for="s1" title="Слайд 1"></label>
                     <label for="s2" title="Слайд 2"></label>
                     <label for="s3" title="Слайд 3"></label>
@@ -195,14 +203,14 @@
 
     </main>
 
-    <footer class="footer" id="footer">
+    <footer class="footer" id="footer-dark">
         <div class="container footer__grid">
             <div>
                 <h2>Открой Оренбуржье</h2>
                 <p>Достопримечательности Оренбургской области</p>
             </div>
             <ul>
-                <li><a href="tel:88005553535">8 (800) 555-35-35</a></li>
+                <li><a href="tel:88007654321">8-800-765-43-21</a></li>
                 <li><a href="mailto:info@orenlandmarks.ru">info@orenlandmarks.ru</a></li>
             </ul>
             <nav>
@@ -213,7 +221,7 @@
                     <li><a href="register.html">Регистрация</a></li>
                     <li><a href="profile.html">Личный кабинет</a></li>
                     <li><a href="catalog.html">Каталог достопримечательностей</a></li>
-                    <li><a href="landmark.html">Страница достопримечательностей</a></li>
+                    <li><a href="landmark.html">Страница достопримечательности</a></li>
                     <li><a href="admin.html">Административная панель</a></li>
                     <li><a href="index_dark.html">Главная - темная тема</a></li>
                 </ul>
