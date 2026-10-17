@@ -591,7 +591,7 @@ h2 {
     margin-bottom: 16px;
 }
 
-/* Формы Предложения исправления */
+/* 10 Формы Предложения исправления */
 
 
 
@@ -694,4 +694,102 @@ h2 {
     font-size: 16px;
     font-weight: 700;
     cursor: pointer;
+}
+
+/* 11 адаптивность */
+
+@media (min-width:1000px) {
+    .burger {
+        display: none;
+    }
+
+    .nav,
+    #menu:checked~.nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: auto;
+        padding: 0;
+    }
+
+    .hero {
+        padding: 120px 64px;
+    }
+
+    .hero__title {
+        font-size: 52px;
+    }
+
+    .slide {
+        min-height: 520px;
+    }
+
+    .catalog-layout {
+        display: grid;
+        grid-template-columns: 260px 1fr;
+        align-items: start;
+        gap: var(--gap-xl);
+    }
+
+    .filter--btn {
+        display: none;
+    }
+
+    #filter-panel {
+        display: block;
+    }
+
+    .footer__grid,
+    .two-cols {
+        display: grid;
+        grid-template-columns: 1fr 1fr 2fr;
+        gap: 24px;
+    }
+
+    .two-cols,
+    .correction__row {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .correction__row {
+        display: grid;
+        gap: 16px;
+    }
+
+    .correction {
+        padding: 40px;
+    }
+
+    .title {
+        font-size: 36px;
+    }
+}
+
+/* 12 Печать */
+
+@media print {
+
+    .no-print,
+    .header,
+    .footer,
+    .landmark-card .stack>:not(h3) {
+        display: none;
+    }
+
+    body {
+        background: #fff;
+        color: #000;
+    }
+
+    .card {
+        border: 0;
+    }
+
+    img {
+        filter: grayscale(1);
+    }
+
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
 }
