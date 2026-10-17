@@ -25,7 +25,106 @@
         </div>
     </header>
 
-    <main class="container"></main>
+    <main class="container" id="landmark-page">
+        <h1 class="title" id="landmark-name">Караван-Сарай</h1>
+        <div class="two-cols form">
+            <div class="slider">
+                <input type="radio" name="slide" id="s1" checked>
+                <input type="radio" name="slide" id="s2">
+                <input type="radio" name="slide" id="s3">
+                <div class="slider__track">
+                    <article class="slide">
+                        <img src="assets/images/karavan-saray-1.jpg" alt="Караван-Сарай изображение 1">
+                    </article>
+                    <article class="slide">
+                        <img src="assets/images/karavan-saray-2.jpg" alt="Караван-Сарай изображение 2">
+                    </article>
+                    <article class="slide">
+                        <img src="assets/images/karavan-saray-3.jpg" alt="Караван-Сарай изображение 3">
+                    </article>
+
+                </div>
+                <div id="slider-indicators" class="dots">
+                    <label for="s1" title="Слайд 1"></label>
+                    <label for="s2" title="Слайд 2"></label>
+                    <label for="s3" title="Слайд 3"></label>
+                </div>
+            </div>
+            <div class="card stack">
+                <p id="landmark-cat" class="pill pill--ok">Историческое место</p>
+                <p id="landmark-region" class="data-row"><span class="muted">Район</span>г. Оренбург</p>
+                <p id="landmark-coords" class="data-row"><span class="muted">Координаты</span>51.7640, 55.1076</p>
+                <div id="landmark-info">
+                    <p class="data-row"><span class="muted">Стоимость</span>Бесплатно</p>
+                    <p class="data-row"><span class="muted">Время работы</span>Ежедневно 9:00–18:00</p>
+                </div>
+                <p class="muted">Описание</p>
+                <p id="landmark-desc">Комплекс XIX века: мечеть с минаретом высотой 50 метров и двухэтажное здание в
+                    форме подковы. Построен для башкирского войска, сейчас — главный символ Оренбурга.</p>
+            </div>
+        </div>
+
+        <section class="section" id="landmark-comments">
+            <h2 class="title">Комментарии</h2>
+            <div class="grid">
+                <div class="card stack">
+                    <p><b>Анна К.</b> <span class="muted">12.07.2024</span></p>
+                    <p>Обязательно зайдите внутрь — потрясающая роспись.</p>
+                </div>
+                <div class="card stack">
+                    <p><b>Андрей Б.</b> <span class="muted">12.07.2024</span></p>
+                    <p>Просто топчик, ставлю лосяру.</p>
+                </div>
+                <div class="card stack">
+                    <p><b>Тимур Д.</b> <span class="muted">12.07.2024</span></p>
+                    <p>Посколько я безнравственный и глупый человек, я не смог оценить этой красоты.</p>
+                </div>
+            </div>
+        </section>
+
+        <form action="#" id="correction-form" class="correction section">
+            <span class="correction__badge">Обратная связь</span>
+            <h2 class="correction__title">Предложить исправление</h2>
+            <p class="correction__subtitle">Нашли неточность? Расскажите нам - мы проверим и обновим информацию</p>
+            <div class="correction__row">
+                <div class="field">
+                    <label for="correction-name">Имя пользователя *</label>
+                    <input type="text" class="input" id="correction-name" placeholder="Ваше имя" required>
+                </div>
+                <div class="field">
+                    <label for="correction-email">E-mail для обратной связи *</label>
+                    <input type="text" class="input" id="correction-email" placeholder="name@mail.ru" required>
+                </div>
+            </div>
+            <div class="field">
+                <label for="correction-type">Тип исправления *</label>
+                <select class="input" id="correction-type">
+                    <option>Неточность в описании</option>
+                    <option>Устаревшие данные</option>
+                    <option>Некорректные координаты</option>
+                    <option>Некачественное фото</option>
+                    <option>Другое</option>
+                </select>
+            </div>
+            <div class="field">
+                <label for="correction-text">Описание предлагаемого исправления *</label>
+                <textarea id="correction-text" class="input" placeholder="Опишите, что нужно исправить"
+                    required></textarea>
+            </div>
+            <div class="field">
+                <label for="correction-file">Подтверждающее фото *</label>
+                <div class="correction__upload">
+                    <p>📎</p>
+                    <p><b>Перетащите фото или нажмите, чтобы выбрать</b></p>
+                    <p class="correction__hint">JPG или PNG, до 5 МБ</p>
+                    <input type="file" name="" id="correction-file">
+                </div>
+            </div>
+            <label for="correction-consent" class="check correction__consent"><input type="checkbox"
+                    id="correction-consent">Я согласен на обработку персональных данных</label>
+            <button type="submit" class="correction__btn" id="correction-submit">Отправить</button>
+        </form>
+    </main>
 
     <footer class="footer" id="footer">
         <div class="container footer__grid">
