@@ -25,7 +25,97 @@
         </div>
     </header>
 
-    <main class="container"></main>
+    <main class="container" id="profile-page">
+        <h1 class="title section">Личный кабинет</h1>
+        <div class="two-cols form">
+            <section class="card" id="user-info">
+                <h2>Мои данные</h2>
+                <p class="data-row"><span class="muted">Email</span> bakushin@email.ru</p>
+                <p class="data-row"><span class="muted">Имя</span> Андрей</p>
+                <p class="data-row"><span class="muted">Фамилия</span> Бакушин</p>
+                <p class="data-row"><span class="muted">Дата рождения</span>25.04.2008</p>
+                <p class="data-row"><span class="muted">Телефон</span>8 (999) 999-99-99</p>
+            </section>
+            <section id="profile-settings" class="card stack">
+                <h2>Настройка профиля</h2>
+                <button id="change-password-btn" class="btn btn--light btn--sm">Сменить пароль</button>
+                <label class="check"><input type="checkbox" name="theme-toggle" id="theme-toggle">Темная тема</label>
+            </section>
+        </div>
+
+        <section class="card section" id="my-landmarks">
+            <h2>Мои достопримечательности</h2>
+            <div class="data-row">
+                <p><b>Караван-Сарай</b><br><span class="muted">Добавлена 12.09.2025</span></p>
+                <span class="pill pill--ok">Одобрена</span>
+                <button class="btn btn--light btn--sm">Редактировать</button>
+            </div>
+            <div class="data-row">
+                <p><b>Бузулукский бор</b><br><span class="muted">Добавлена 12.10.2025</span></p>
+                <span class="pill pill--err">Отклоненна</span>
+                <button class="btn btn--light btn--sm">Редактировать</button>
+            </div>
+            <div class="data-row">
+                <p><b>Гора Шайтан-Тау</b><br><span class="muted">Добавлена 14.10.2025</span></p>
+                <span class="pill pill--wait">На проверке</span>
+                <button class="btn btn--light btn--sm">Редактировать</button>
+            </div>
+
+        </section>
+
+        <form class="card form section" id="add-landmark-form">
+            <h2>Добавить достопримечательность</h2>
+            <div class="field">
+                <label for="landmark-title">Название *</label>
+                <input type="text" class="input" id="landmark-title" placeholder="Например, Нахабино" required>
+            </div>
+            <div class="two-cols form">
+                <div class="field">
+                    <label for="landmark-category">Категория *</label>
+                    <select id="landmark-category" class="input">
+                        <option>Памятник архитектуры</option>
+                        <option>Природный объект</option>
+                        <option>Музей</option>
+                        <option>Историческое место</option>
+                        <option>Религиозное сооружение</option>
+                        <option>Другое</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label for="landmark-district">Район *</label>
+                    <select id="landmark-district" class="input">
+                        <option>г. Оренбург</option>
+                        <option>Оренбургский район</option>
+                        <option>Бузулукский район</option>
+                        <option>Соль-Илецкий городской округ</option>
+                        <option>Кувандыкский городской округ</option>
+                        <option>Илекский район</option>
+                        <option>Орский городской округ</option>
+                    </select>
+                </div>
+            </div>
+            <div class="field">
+                <label for="landmark-description">Описание *</label>
+                <textarea type="text" class="input" id="landmark-description"
+                    placeholder="Расскажите побольше о достопримечательности" required></textarea>
+            </div>
+            <div class="two-cols form">
+                <div class="field">
+                    <label for="landmark-lat">Широта *</label>
+                    <input type="number" class="input" id="landmark-lat" step="0.0001" placeholder="51.7682" required>
+                </div>
+                <div class="field">
+                    <label for="landmark-lng">Долгота *</label>
+                    <input type="number" class="input" id="landmark-lng" step="0.0001" placeholder="53.1234" required>
+                </div>
+            </div>
+            <div class="field">
+                <label for="landmark-images">Фотографии</label>
+                <input type="file" id="landmark-images" class="input" accept="image/*" multiple>
+            </div>
+            <button type="submit" class="btn" id="landmark-submit">Отправить на модерацию</button>
+        </form>
+    </main>
 
     <footer class="footer" id="footer">
         <div class="container footer__grid">

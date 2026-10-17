@@ -28,40 +28,43 @@
     <main class="container">
         <form action="#" class="card form section narrow" id="login-form">
             <h1 class="title">Регистрация</h1>
-            <div class="field">
+            <div class="field error">
                 <label for="reg-email">E-mail *</label>
-                <input type="email" class="input" id="reg-email" placeholder="example@email.ru">
+                <input type="email" class="input" id="reg-email" placeholder="example@email.ru" required>
+                <p class="error-text">Некорректный e-mail: пример - name@mail.ru</p>
             </div>
             <div class="two-cols form">
-                <div class="field">
+                <div class="field success">
                     <label for="reg-lastname">Фамилия *</label>
-                    <input type="text" class="input" id="reg-lastname" placeholder="Бакушин">
+                    <input type="text" class="input" id="reg-lastname" placeholder="Бакушин" required>
+                    <p class="success-text">Отлично!</p>
                 </div>
-                <div class="field">
+                <div class="field error">
                     <label for="reg-firstname">Имя *</label>
-                    <input type="text" class="input" id="reg-firstname" placeholder="Андрей">
+                    <input type="text" class="input" id="reg-firstname" placeholder="Андрей" required>
+                    <p class="error-text">Обязательное поле</p>
                 </div>
             </div>
             <div class="two-cols form">
                 <div class="field">
                     <label for="reg-birthdate">День рождения</label>
-                    <input type="date" class="input" id="reg-birthdate">
+                    <input type="date" class="input" id="reg-birthdate" required>
                 </div>
                 <div class="field">
                     <label for="reg-phone">Телефон</label>
-                    <input type="tel" class="input" id="reg-phone" placeholder="8 (123) 456-78-90">
+                    <input type="tel" class="input" id="reg-phone" placeholder="8 (123) 456-78-90" required>
                 </div>
             </div>
             <div class="field error">
                 <label for="reg-password">Пароль *</label>
-                <input type="password" class="input" id="reg-password">
+                <input type="password" class="input" id="reg-password" required>
                 <p class="error-text">Пароли не совпадают</p>
             </div>
             <div class="field error">
                 <label for="reg-password-confirm">Подтвердите пароль *</label>
-                <input type="password" class="input" id="reg-password-confirm">
+                <input type="password" class="input" id="reg-password-confirm" required>
             </div>
-            <label class="check"><input type="checkbox" id="reg-consent">Согласен на обработку персональных
+            <label class="check"><input type="checkbox" id="reg-consent" required>Согласен на обработку персональных
                 данных</label>
 
             <button type="submit" class="btn" id="reg-submit">Войти</button>

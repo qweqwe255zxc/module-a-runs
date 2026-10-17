@@ -91,6 +91,10 @@ select {
     color: inherit;
 }
 
+textarea {
+    resize: vertical;
+}
+
 /* 4 Общие блоки */
 
 .container {
@@ -121,7 +125,7 @@ h2 {
 
 .card {
     background: var(--card);
-    padding: 24px;
+    padding: 20px;
     border: 1px solid var(--line);
     border-radius: var(--radius);
 }
@@ -201,7 +205,10 @@ h2 {
 /* Статусы и бейджики  */
 
 .pill {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 12px;
     background: var(--card);
     border-radius: 999px;
     font-weight: 700;
@@ -231,7 +238,11 @@ h2 {
     display: grid;
     grid-template-columns: minmax(0, 1fr);
     gap: var(--gap-lg);
-    text-align: center;
+
+    & h1,
+    a {
+        text-align: center;
+    }
 }
 
 .field {
@@ -530,4 +541,15 @@ h2 {
 .partners {
     justify-content: space-around;
     gap: var(--gap-xl);
+}
+
+/* Личный кабинет */
+
+.data-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: var(--gap-xs);
+    padding: 12px 0;
+    border-bottom: 1px solid var(--line);
 }
