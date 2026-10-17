@@ -25,8 +25,72 @@
         </div>
     </header>
 
-    <main class="container"></main>
-
+    <main class="container" id="admin-page">
+        <h1 class="title section">Административная панель</h1>
+        <form class="card form section" id="admin-add-form">
+            <h2>Добавить достопримечательность</h2>
+            <div class="field">
+                <label for="admin-andmark-title">Название *</label>
+                <input type="text" class="input" id="admin-landmark-title" placeholder="Например, Нахабино" required>
+            </div>
+            <div class="two-cols form">
+                <div class="field">
+                    <label for="admin-landmark-category">Категория *</label>
+                    <select id="admin-landmark-category" class="input">
+                        <option>Памятник архитектуры</option>
+                        <option>Природный объект</option>
+                        <option>Музей</option>admin-
+                        <option>Историческое место</option>
+                        <option>Религиозное сооружение</option>
+                        <option>Другое</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label for="landmark-district">Район *</label>
+                    <select id="landmark-district" class="input">
+                        <option>г. Оренбург</option>
+                        <option>Оренбургский район</option>
+                        <option>Бузулукский район</option>
+                        <option>Соль-Илецкий городской округ</option>
+                        <option>Кувандыкский городской округ</option>
+                        <option>Илекский район</option>
+                        <option>Орский городской округ</option>
+                    </select>
+                </div>
+            </div>
+            <div class="field">
+                <label for="admin-landmark-cover">Изображние обложки *</label>
+                <input type="file" id="admin-landmark-cover" class="input" accept="image/*">
+            </div>
+            <div class="field">
+                <label for="admin-landmark-author">Автор *</label>
+                <input type="text" id="admin-landmark-author" class="input"
+                    placeholder="Например, Иванов Иван Иванович">
+            </div>
+            <div class="field">
+                <label for="admin-landmark-desc">Описание *</label>
+                <textarea type="text" class="input" id="admin-landmark-desc"
+                    placeholder="Расскажите побольше о достопримечательности" required></textarea>
+            </div>
+            <div class="two-cols form">
+                <div class="field">
+                    <label for="admin-landmark-lat">Широта *</label>
+                    <input type="number" class="input" id="admin-landmark-lat" step="0.0001" placeholder="51.7682"
+                        required>
+                </div>
+                <div class="field">
+                    <label for="admin-landmark-lng">Долгота *</label>
+                    <input type="number" class="input" id="admin-landmark-lng" step="0.0001" placeholder="53.1234"
+                        required>
+                </div>
+            </div>
+            <div class="field">
+                <label for="admin-landmark-images">Дополнительные изображения</label>
+                <input type="file" id="admin-landmark-images" class="input" accept="image/*" multiple>
+            </div>
+            <button type="submit" class="btn" id="admin-add-btn">Добавить достопримечательность</button>
+        </form>
+    </main>
     <footer class="footer" id="footer">
         <div class="container footer__grid">
             <div>
