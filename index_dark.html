@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная - Открой Оренбуржье</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="dark">
+    <header class="header">
+        <div class="container header__main">
+            <a href="index.html" id="logo"><img src="assets/images/logo.svg" alt="Открой Оренбуржье" width="210"
+                    height="44"></a>
+            <input type="checkbox" id="menu">
+            <label for="menu" class="burger" title="Меню">☰</label>
+            <nav id="main-nav" class="nav">
+                <a href="#search-section" id="go-to-search">Поиск достопримечательностей</a>
+                <a href="catalog.html" id="nav-catalog">Каталог достопримечательностей</a>
+                <a href="profile.html" id="nav-profile">Личный кабинет</a>
+                <a href="login.html" id="nav-login" class="btn btn--sm">Войти</a>
+                <a href="register.html" id="nav-register" class="btn btn--light btn--sm ">Регистрация</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="search-section" class="hero">
+            <img src="assets/images/step.jpg" alt="Открой Оренбуржье">
+            <h1 class="hero__title">Открой Оренбуржье</h1>
+            <form action="catalog.html" class="row">
+                <input type="search" id="search-input" list="hints" class="input" placeholder="Музеи">
+                <datalist id="hints">
+                    <option value="Памятники архитектуры"></option>
+                    <option value="Природные объекты"></option>
+                    <option value="Музеи"></option>
+                </datalist>
+                <button type="submit" id="search-button" class="btn">Найти</button>
+            </form>
+        </section>
+
+        <section class="section" id="advantages-section">
+            <h2 class="title">Почему с нами удобно</h2>
+            <div class="grid">
+                <article class="card stack">
+                    <p class="advantage__icon">📷</p>
+                    <h3>Удобная загрузка фотографий</h3>
+                </article>
+                <article class="card stack">
+                    <p class="advantage__icon">📍</p>
+                    <h3>Точные координаты на карте</h3>
+                </article>
+                <article class="card stack">
+                    <p class="advantage__icon">✍️</p>
+                    <h3>Подробные описания от местных жителей</h3>
+                </article>
+                <article class="card stack">
+                    <p class="advantage__icon">⭐️</p>
+                    <h3>Актуальная информация и отзывы путешественников</h3>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="popular-section">
+            <h2 class="title">Популярные достопримечательности</h2>
+            <div class="grid">
+                <article class="card landmark-card stack">
+                    <img src="/assets/images/karavan-saray-1.jpg" alt="Караван-Сарай" class="photo">
+                    <div class="stack">
+                        <h3>Караван-Сарай</h3>
+                        <p class="muted">Историческое место · г. Оренбург</p>
+                        <div class="rating"><img src="assets/icons/star-full.svg" alt="" width="16" height="16"><img
+                                src="assets/icons/star-full.svg" alt="" width="16" height="16"><img
+                                src="assets/icons/star-full.svg" alt="" width="16" height="16"><img
+                                src="assets/icons/star-full.svg" alt="" width="16" height="16"><img
+                                src="assets/icons/star-full.svg" alt="" width="16" height="16"> 312 оценок</div>
+                        <p class="muted">Автор: kraeved_56</p>
+                        <p class="muted">📍 51.7640, 55.1076</p>
+                        <p class="muted">📷 24 фото</p>
+                        <a href="landmark.html" class="btn btn--sm">Подробнее</a>
+                </article>
+                <article class="card landmark-card stack">
+                    <img src="/assets/images/buzuluk-bor-2.jpg" alt="Бузулукский Бор" class="photo">
+                    <div class="stack">
+                        <h3>Бузулукский Бор</h3>
+                        <p class="muted">Природное место · Бузулукский район</p>
+                        <div class="rating"><img src="assets/icons/star-full.svg" alt="" width="16" height="16"><img
+                                src="assets/icons/star-full.svg" alt="" width="16" height="16"><img
+                                src="assets/icons/star-full.svg" alt="" width="16" height="16"><img
+                                src="assets/icons/star-full.svg" alt="" width="16" height="16"> 42 оценки</div>
+                        <p class="muted">Автор: borov_67</p>
+                        <p class="muted">📍 54.7640, 52.1076</p>
+                        <p class="muted">📷 23 фото</p>
+                        <a href="landmark.html" class="btn btn--sm">Подробнее</a>
+                </article>
+                <article class="card landmark-card stack">
+                    <img src="/assets/images/sol-ileck.jpg" alt="Соль Илецк" class="photo">
+                    <div class="stack">
+                        <h3>Соленые озера Соль Илецка</h3>
+                        <p class="muted">Природное объект · Соль-Илецкий округ</p>
+                        <div class="rating"><img src="assets/icons/star-full.svg" alt="" width="16" height="16"><img
+                                src="assets/icons/star-full.svg" alt="" width="16" height="16"><img
+                                src="assets/icons/star-full.svg" alt="" width="16" height="16"><img
+                                src="assets/icons/star-full.svg" alt="" width="16" height="16"> 422 оценки</div>
+                        <p class="muted">Автор: iletsk_67</p>
+                        <p class="muted">📍 53.7640, 48.1076</p>
+                        <p class="muted">📷 233 фото</p>
+                        <a href="landmark.html" class="btn btn--sm">Подробнее</a>
+                </article>
+                <article class="card landmark-card stack">
+                    <img src="/assets/images/nac-derevnya.jpg" alt="Национальная деревня" class="photo">
+                    <div class="stack">
+                        <h3>Национальная деревня</h3>
+                        <p class="muted">Историческое место · г. Оренбург</p>
+                        <div class="rating"><img src="assets/icons/star-full.svg" alt="" width="16" height="16"><img
+                                src="assets/icons/star-full.svg" alt="" width="16" height="16"><img
+                                src="assets/icons/star-full.svg" alt="" width="16" height="16"><img
+                                src="assets/icons/star-full.svg" alt="" width="16" height="16"> 12 оценки</div>
+                        <p class="muted">Автор: derevenka_322</p>
+                        <p class="muted">📍 56.7640, 42.1076</p>
+                        <p class="muted">📷 3 фото</p>
+                        <a href="landmark.html" class="btn btn--sm">Подробнее</a>
+                </article>
+                <article class="card landmark-card stack">
+                    <img src="/assets/images/museum.jpg" alt="Краеведческий музей" class="photo">
+                    <div class="stack">
+                        <h3>Краеведческий музей</h3>
+                        <p class="muted">Музей · г. Оренбург</p>
+                        <div class="rating"><img src="assets/icons/star-full.svg" alt="" width="16" height="16"><img
+                                src="assets/icons/star-full.svg" alt="" width="16" height="16"><img
+                                src="assets/icons/star-full.svg" alt="" width="16" height="16"> 22 оценки</div>
+                        <p class="muted">Автор: museum_52</p>
+                        <p class="muted">📍 54.40, 51.76</p>
+                        <p class="muted">📷 24 фото</p>
+                        <a href="landmark.html" class="btn btn--sm">Подробнее</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="slider-section">
+            <h2 class="title">Красоты Оренбуржья</h2>
+            <div class="slider">
+                <input type="radio" name="slide" id="s1" checked>
+                <input type="radio" name="slide" id="s2">
+                <input type="radio" name="slide" id="s3">
+                <input type="radio" name="slide" id="s4">
+                <div class="slider__track">
+                    <article class="slide">
+                        <img src="assets/images/sol-ileck.jpg" alt="Соль Илецк">
+                        <div class="slide__text">
+                            <h3>Соляные озера Соль-Илецка</h3>
+                            <p>Лечебные соленые озера в Соль Илецке, в которых невозможно утонуть</p>
+                        </div>
+                    </article>
+                    <article class="slide">
+                        <img src="assets/images/buzuluk-bor.jpg" alt="Бузулукский бор">
+                        <div class="slide__text">
+                            <h3>Бузулукский бор</h3>
+                            <p>Сосновый лес посреди степи — национальный парк площадью больше 100 тысяч гектаров.</p>
+                        </div>
+                    </article>
+                    <article class="slide">
+                        <img src="assets/images/shaitan-tau.jpg" alt="Гора Шайтан-Тау">
+                        <div class="slide__text">
+                            <h3>Гора Шайтан-Тау</h3>
+                            <p>Заповедная гора у границы с Башкирией, красивее всего на закате.</p>
+                        </div>
+                    </article>
+                    <article class="slide">
+                        <img src="assets/images/karavan-saray-2.jpg" alt="Караван-Сарай">
+                        <div class="slide__text">
+                            <h3>Караван-Сарай</h3>
+                            <p>Полюбуйтесь на красоты исторического города.</p>
+                        </div>
+                    </article>
+                </div>
+                <div id="slider-indicators" class="dots">
+                    <label for="s1" title="Слайд 1"></label>
+                    <label for="s2" title="Слайд 2"></label>
+                    <label for="s3" title="Слайд 3"></label>
+                    <label for="s4" title="Слайд 4"></label>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="partners-section">
+            <h2 class="title">Наши партнеры</h2>
+            <div class="card row partners">
+                <img src="assets/images/logos/partner-museum.svg" alt="Краеведческий музей">
+                <img src="assets/images/logos/partner-steppe.svg" alt="Заповедник Степной край">
+                <img src="assets/images/logos/partner-tour.svg" alt="Туристический центр региона">
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer" id="footer">
+        <div class="container footer__grid">
+            <div>
+                <h2>Открой Оренбуржье</h2>
+                <p>Достопримечательности Оренбургской области</p>
+            </div>
+            <ul>
+                <li><a href="tel:88005553535">8 (800) 555-35-35</a></li>
+                <li><a href="mailto:info@orenlandmarks.ru">info@orenlandmarks.ru</a></li>
+            </ul>
+            <nav>
+                <h2>Навигация по сайту</h2>
+                <ul class="stack">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="login.html">Вход</a></li>
+                    <li><a href="register.html">Регистрация</a></li>
+                    <li><a href="profile.html">Личный кабинет</a></li>
+                    <li><a href="catalog.html">Каталог достопримечательностей</a></li>
+                    <li><a href="landmark.html">Страница достопримечательностей</a></li>
+                    <li><a href="admin.html">Административная панель</a></li>
+                    <li><a href="index_dark.html">Главная - темная тема</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+
+</html>
