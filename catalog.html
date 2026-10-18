@@ -24,7 +24,145 @@
             </nav>
         </div>
     </header>
-    <main class="container"></main>
+    <main class="container" id="catalog-page">
+        <h1 class="title section">Достопримечательности Оренбургской области</h1>
+        <form action="#" class="row no-print">
+            <input type="search" id="catalog-search" class="input" list="hints" placeholder="Например, Бузулукский бор">
+            <datalist id="hints">
+                <option value="Бузулукский бор"></option>
+                <option value="Соль-Илецк"></option>
+                <option value="Караван-Сарай"></option>
+            </datalist>
+            <button type="submit" class="btn" id="catalog-search-btn">Найти</button>
+        </form>
+
+        <div class="catalog-layout section">
+            <div class="no-print">
+                <input type="checkbox" id="filter-toggle">
+                <label for="filter-toggle" class="filter-btn btn btn--light">Фильтры</label>
+                <aside id="filter-panel" class="card stack">
+                    <h2>Категории</h2>
+                    <label class="check"><input type="checkbox">Памятник архитектуры</label>
+                    <label class="check"><input type="checkbox">Природный объект</label>
+                    <label class="check"><input type="checkbox">Музей</label>
+                    <label class="check"><input type="checkbox">Историческое место</label>
+                    <label class="check"><input type="checkbox">Религиозное сооружение</label>
+                </aside>
+            </div>
+            <div class="grid">
+                <article class="card landmark-card stack">
+                    <img src="assets/images/karavan-saray-1.jpg" alt="Караван-Сарай" class="photo">
+                    <div class="stack">
+                        <h3>Караван-Сарай</h3>
+                        <p class="muted">Историческое место | г. Оренбург</p>
+                        <div class="rating">
+                            <div>
+                                <img src="assets/images/icons/star-full.svg" alt="Звезда">
+                                <img src="assets/images/icons/star-full.svg" alt="Звезда">
+                                <img src="assets/images/icons/star-full.svg" alt="Звезда">
+                                <img src="assets/images/icons/star-full.svg" alt="Звезда">
+                                <img src="assets/images/icons/star-empty.svg" alt="Пустая звезда">
+                                &nbsp;
+                            </div>
+                            312 Оценок
+                        </div>
+                        <p class="data-row"><span class="muted">Автор</span> kraeved42</p>
+                        <p class="data-row"><span class="muted">Координаты</span> 51.7640, 55.1076</p>
+                        <p class="data-row"><span class="muted">Фото</span> 24</p>
+                        <a href="landmark.html" class="btn btn--sm">Подробнее</a>
+                    </div>
+                </article>
+                <article class="card landmark-card stack">
+                    <img src="assets/images/buzuluk-bor.jpg" alt="Бузулукский бор" class="photo">
+                    <div class="stack">
+                        <h3>Бузулукский бор</h3>
+                        <p class="muted">Природный объект | Бузулукский район</p>
+                        <div class="rating">
+                            <div>
+                                <img src="assets/images/icons/star-full.svg" alt="Звезда">
+                                <img src="assets/images/icons/star-full.svg" alt="Звезда">
+                                <img src="assets/images/icons/star-full.svg" alt="Звезда">
+                                <img src="assets/images/icons/star-full.svg" alt="Звезда">
+                                <img src="assets/images/icons/star-empty.svg" alt="Пустая звезда">
+                                &nbsp;
+                            </div>
+                            31 Оценка
+                        </div>
+                        <p class="data-row"><span class="muted">Автор</span> borov32</p>
+                        <p class="data-row"><span class="muted">Координаты</span> 52.7640, 54.1076</p>
+                        <p class="data-row"><span class="muted">Фото</span> 14</p>
+                        <a href="landmark.html" class="btn btn--sm">Подробнее</a>
+                    </div>
+                </article>
+                <article class="card landmark-card stack">
+                    <img src="assets/images/sol-ileck.jpg" alt="Соляные озёра Соль-Илецка" class="photo">
+                    <div class="stack">
+                        <h3>Соляные озёра Соль-Илецка</h3>
+                        <p class="muted">Природный объект | Соль-Илецкий округ</p>
+                        <div class="rating">
+                            <div>
+                                <img src="assets/images/icons/star-full.svg" alt="Звезда">
+                                <img src="assets/images/icons/star-full.svg" alt="Звезда">
+                                <img src="assets/images/icons/star-full.svg" alt="Звезда">
+                                <img src="assets/images/icons/star-empty.svg" alt="Пустая звезда">
+                                <img src="assets/images/icons/star-empty.svg" alt="Пустая звезда">
+                                &nbsp;
+                            </div>
+                            &nbsp; 421 Оценка
+                        </div>
+                        <p class="data-row"><span class="muted">Автор</span> solevoy52</p>
+                        <p class="data-row"><span class="muted">Координаты</span> 53.7640, 53.1076</p>
+                        <p class="data-row"><span class="muted">Фото</span> 1022</p>
+                        <a href="landmark.html" class="btn btn--sm">Подробнее</a>
+                    </div>
+                </article>
+                <article class="card landmark-card stack">
+                    <img src="assets/images/museum.jpg" alt="Губернаторский музей" class="photo">
+                    <div class="stack">
+                        <h3>Губернаторский музей</h3>
+                        <p class="muted">Музей | г. Оренбург</p>
+                        <div class="rating">
+                            <div>
+                                <img src="assets/images/icons/star-full.svg" alt="Звезда">
+                                <img src="assets/images/icons/star-full.svg" alt="Звезда">
+                                <img src="assets/images/icons/star-full.svg" alt="Звезда">
+                                <img src="assets/images/icons/star-full.svg" alt="Звезда">
+                                <img src="assets/images/icons/star-full.svg" alt="Звезда">
+                                &nbsp;
+                            </div>
+                            43 Оценки
+                        </div>
+                        <p class="data-row"><span class="muted">Автор</span> meseum52</p>
+                        <p class="data-row"><span class="muted">Координаты</span> 54.7640, 52.1076</p>
+                        <p class="data-row"><span class="muted">Фото</span> 102</p>
+                        <a href="landmark.html" class="btn btn--sm">Подробнее</a>
+                    </div>
+                </article>
+                <article class="card landmark-card stack">
+                    <img src="assets/images/nac-derevnya.jpg" alt="Национальная деревня" class="photo">
+                    <div class="stack">
+                        <h3>Национальная деревня</h3>
+                        <p class="muted">Историческое место | г. Оренбург</p>
+                        <div class="rating">
+                            <div>
+                                <img src="assets/images/icons/star-full.svg" alt="Звезда">
+                                <img src="assets/images/icons/star-full.svg" alt="Звезда">
+                                <img src="assets/images/icons/star-full.svg" alt="Звезда">
+                                <img src="assets/images/icons/star-full.svg" alt="Звезда">
+                                <img src="assets/images/icons/star-full.svg" alt="Звезда">
+                                &nbsp;
+                            </div>
+                            12 Оценок
+                        </div>
+                        <p class="data-row"><span class="muted">Автор</span> derevenskiyVolk</p>
+                        <p class="data-row"><span class="muted">Координаты</span> 54.1000, 52.9976</p>
+                        <p class="data-row"><span class="muted">Фото</span> 12</p>
+                        <a href="landmark.html" class="btn btn--sm">Подробнее</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
     <footer class="footer">
         <div class="container footer__grid">
             <div>

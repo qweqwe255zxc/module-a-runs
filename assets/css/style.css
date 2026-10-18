@@ -584,3 +584,50 @@ input[type="file"]::file-selector-button {
     height: 60px;
     width: 200px;
 }
+
+/* Каталог */
+
+#filter-toggle {
+    display: none;
+}
+
+.filter-btn {
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+#filter-panel {
+    display: none;
+    margin-bottom: 20px;
+}
+
+#filter-toggle:checked~#filter-panel {
+    display: block;
+}
+
+@media print {
+
+    .footer,
+    .header,
+    .no-print .landmark-card .stack>:not(h3) {
+        display: none;
+    }
+
+    .card {
+        border: 0;
+    }
+
+    .body {
+        background: #fff;
+        color: #000;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    img {
+        filter: grayscale(1);
+    }
+
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
