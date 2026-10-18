@@ -24,7 +24,102 @@
             </nav>
         </div>
     </header>
-    <main class="container"></main>
+    <main class="container" id="landmark-page">
+        <h2 id="landmark-name" class="title section">Караван-Сарай</h2>
+        <div class="two-cols form">
+            <div class="slider">
+                <input type="radio" name="slide" id="s1" checked>
+                <input type="radio" name="slide" id="s2">
+                <input type="radio" name="slide" id="s3">
+                <div class="slider__track">
+                    <article class="slide">
+                        <img src="assets/images/karavan-saray-1.jpg" alt="Караван-Сарай, фото 1">
+                    </article>
+                    <article class="slide">
+                        <img src="assets/images/karavan-saray-2.jpg" alt="Караван-Сарай, фото 2">
+                    </article>
+                    <article class="slide">
+                        <img src="assets/images/karavan-saray-2.jpg" alt="Караван-Сарай, фото 3">
+                    </article>
+                </div>
+                <div class="dots" id="slider-indicators">
+                    <label for="s1"></label>
+                    <label for="s2"></label>
+                    <label for="s3"></label>
+                </div>
+            </div>
+            <div class="card stack">
+                <p class="pill pill--ok" id="landmark-cat">Историческое место</p>
+
+                <p class="data-row" id="landmark-region"><span class="muted">Район</span> г. Оренбург</p>
+                <p class="data-row" id="landmark-coords"><span class="muted">Координаты</span> 51.7640, 55.1076</p>
+                <p class="data-row"><span class="muted">Фото</span> 24</p>
+                <div id="landmark-info">
+                    <p class="data-row" id="landmark-coords"><span class="muted">Режим работы</span> Ежеднево с 9 до 18
+                    </p>
+                    <p class="data-row" id="landmark-coords"><span class="muted">Стоимость</span> Бесплатно</p>
+                </div>
+            </div>
+        </div>
+        <section class="section" id="landmark-comments">
+            <h2 class="title">Комментарии</h2>
+            <div class="grid">
+                <div class="card stack">
+                    <p><b>Андрей. Б</b>&nbsp; <span class="muted">12.04.2026</span></p>
+                    <p>Обязательно зайдите внутрь - потрясающая роспись.</p>
+                </div>
+                <div class="card stack">
+                    <p><b>Тимур. Д</b>&nbsp; <span class="muted">12.05.2026</span></p>
+                    <p>Для прогулки с семьей супер.</p>
+                </div>
+                <div class="card stack">
+                    <p><b>Денис. С</b>&nbsp; <span class="muted">22.04.2026</span></p>
+                    <p>Очень красиво.</p>
+                </div>
+            </div>
+        </section>
+        <form action="#" id="correction-form" class="correction section">
+            <span class="correction__badge">Обратная связь</span>
+            <h2 class="correction__title">Предложить исправление</h2>
+            <p class="correction__sub">Нашли неточность? Расскажите нам - мы проверим и обновим информацию.</p>
+            <div class="correction__row">
+                <div class="field">
+                    <label for="correction-name">Имя пользователя</label>
+                    <input type="text" class="input" id="correction-name" placeholder="Ваше имя">
+                </div>
+                <div class="field">
+                    <label for="correction-email">E-mail для обратной связи</label>
+                    <input type="email" class="input" id="correction-email" placeholder="name@mail.ru">
+                </div>
+            </div>
+            <div class="field">
+                <label for="correction-type">Тип исправления</label>
+                <select id="correction-type" class="input">
+                    <option value="Неточность в описании">Неточность в описании</option>
+                    <option value="Устаревшие данные">Устаревшие данные</option>
+                    <option value="Некорректные координаты">Некорректные координаты</option>
+                    <option value="Некачественное фото">Некачественное фото</option>
+                    <option value="Другоe">Другоe</option>
+                </select>
+            </div>
+            <div class="field">
+                <label for="correction-text">Описание исправления</label>
+                <textarea placeholder="Опишите, что нужно исправить" id="correction-text" class="input"></textarea>
+            </div>
+            <div class="field">
+                <label for="correction-file">Подтверждающее фото</label>
+                <div class="correction__upload">
+                    <p>📎</p>
+                    <p><b>Перетащите фото или нажмите, чтобы выбрать</b></p>
+                    <p class="correction__hint">JPG или PNG, до 5 МБ</p>
+                    <input type="file" id="correction-file" accept="image/*">
+                </div>
+            </div>
+            <label class="check correction__consent" id="correction-consent"><input type="checkbox"
+                    id="correction-consent">Я согласен на обработку персональных данных</label>
+            <button type="submit" class="correction__btn" id="correction-submit">Отправить</button>
+        </form>
+    </main>
     <footer class="footer">
         <div class="container footer__grid">
             <div>
