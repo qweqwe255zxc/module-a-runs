@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="60" viewBox="0 0 200 60">
+  <path d="M10 22 30 10l20 12zM14 24h4v18h-4zm8 0h4v18h-4zm8 0h4v18h-4zm8 0h4v18h-4zM10 44h40v4H10z" fill="#8A93AB"/>
+  <text x="60" y="28" font-family="Arial" font-size="13" font-weight="700" fill="#8A93AB">Краеведческий</text>
+  <text x="60" y="44" font-family="Arial" font-size="13" font-weight="700" fill="#8A93AB">музей</text>
+</svg>

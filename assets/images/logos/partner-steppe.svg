@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="60" viewBox="0 0 200 60">
+  <path d="M8 46c10-14 20-14 30 0s20 14 22 0" fill="none" stroke="#8A93AB" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="30" cy="20" r="8" fill="#8A93AB"/>
+  <text x="68" y="28" font-family="Arial" font-size="13" font-weight="700" fill="#8A93AB">Заповедник</text>
+  <text x="68" y="44" font-family="Arial" font-size="13" font-weight="700" fill="#8A93AB">«Степной край»</text>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="210" height="44" viewBox="0 0 210 44">
+  <rect width="44" height="44" rx="12" fill="#2E7D5B"/>
+  <path d="M6 32 17 18l7 8 5-6 9 12z" fill="#fff"/>
+  <circle cx="31" cy="12" r="5" fill="#E8A33D"/>
+  <text x="54" y="20" font-family="Montserrat, Arial" font-size="15" font-weight="800" fill="#2E7D5B">Открой</text>
+  <text x="54" y="37" font-family="Montserrat, Arial" font-size="15" font-weight="800" fill="#E8A33D">Оренбуржье</text>
+</svg>
