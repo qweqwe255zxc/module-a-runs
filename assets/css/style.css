@@ -1,0 +1,289 @@
+/* Шрифты */
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat/Montserrat[wght].ttf);
+    font-weight: 100 900;
+}
+
+/* Переменные */
+
+:root {
+    --green: #2E7D5B;
+    --gold: #E8A33D;
+    --text: #1F2430;
+    --muted: #6B7280;
+    --bg: #F7F4EE;
+    --surface: #FFFFFF;
+    --line: #E6E0D6;
+
+    --ok: rgb(35, 146, 35);
+    --ok-muted: rgb(206, 255, 206);
+    --wait: rgb(227, 168, 59);
+    --wait-muted: rgb(255, 239, 210);
+    --err: rgb(244, 47, 47);
+    --err-muted: rgb(255, 202, 202);
+
+    --radius: 20px;
+    --radius-sm: 12px;
+}
+
+.dark {
+    --bg: #12161D;
+    --muted: #b0b8c8;
+    --surface: #1C222B;
+    --text: #ECEFF4;
+    --line: #2E3642;
+}
+
+/* Cброс */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    font-family: "Montserrat", Arial, sans-serif;
+    display: grid;
+    min-height: 100dvh;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: minmax(0, 1fr);
+    line-height: 1.5;
+    color: var(--text);
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+input,
+textarea,
+button,
+select {
+    font: inherit;
+    color: inherit;
+}
+
+/*  */
+/* Общие блоки */
+/*  */
+.container {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.section {
+    margin-top: 56px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+.title {
+    margin-bottom: 24px;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.muted {
+    font-size: 14px;
+    color: var(--muted);
+}
+
+.card {
+    padding: 20px;
+    border-radius: var(--radius);
+    border: 1px solid var(--line);
+    background: var(--surface);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+    gap: 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+}
+
+.row .input {
+    width: auto;
+    flex: 1;
+    min-width: 0;
+}
+
+.narrow {
+    max-width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.narrow .title,
+.narrow>p,
+.narrow>a {
+    text-align: center;
+}
+
+.narrow .title {
+    margin-bottom: 10px;
+}
+
+.stack>*+* {
+    margin-top: 8px;
+}
+
+.photo {
+    width: 100%;
+    aspect-ratio: 4 /3;
+    object-fit: cover;
+    border-radius: var(--radius-sm);
+}
+
+/* Кнопки */
+
+.btn {
+    display: inline-block;
+    padding: 12px 22px;
+    border: 0;
+    border-radius: 999px;
+    background: var(--green);
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    transition: transform .3s;
+
+    &:hover {
+        transform: translateY(-2px);
+    }
+}
+
+.link {
+    color: var(--green);
+}
+
+input[type="file"]::file-selector-button {
+    margin-right: 12px;
+    padding: 6px 12px;
+    border: 0;
+    border-radius: 999px;
+    background: var(--green);
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btn--light {
+    color: var(--green);
+    background: var(--surface);
+    border: 1px solid var(--green);
+}
+
+.btn--sm {
+    padding: 6px 12px;
+    font-size: 14px;
+}
+
+/* Бейджи */
+
+.pill {
+    padding: 6px 12px;
+    border-radius: 999px;
+    background: var(--surface);
+    font-size: 13px;
+    font-weight: 700;
+
+}
+
+.pill--ok {
+    background: var(--ok-muted);
+    color: var(--ok);
+}
+
+.pill--wait {
+    background: var(--wait-muted);
+    color: var(--wait);
+}
+
+.pill--err {
+    background: var(--err-muted);
+    color: var(--err);
+}
+
+/* Формы */
+
+.form {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+}
+
+.field {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 6px;
+}
+
+.field label {
+    font-size: 14px;
+    color: var(--muted);
+    font-weight: 700;
+}
+
+.input {
+    padding: 12px 14px;
+    width: 100%;
+    border: 1.5px solid var(--line);
+    border-radius: var(--radius-sm);
+    background: var(--surface);
+}
+
+.error .input {
+    border-color: var(--err);
+}
+
+.error-text {
+    color: var(--err);
+    font-size: 13px;
+}
+
+.success .input {
+    border-color: var(--ok);
+}
+.success-text {
+    color: var(--ok);
+    font-size: 13px;
+}
+
+.check {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 14px;
+}
+
+/* Шапка */
