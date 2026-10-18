@@ -27,7 +27,7 @@
     <main class="container" id="admin-page">
         <h1 class="title section">Административная панель</h1>
 
-        <section class="section">
+        <section class="section" id="admin-landmarks-list">
             <h2 class="title">Все достопримечательности</h2>
             <div class="grid">
                 <article class="card landmark-card stack">
@@ -188,12 +188,12 @@
             </div>
             <div class="two-cols form">
                 <div class="field">
-                    <label for="ladmin-andmark-lat">Широта *</label>
+                    <label for="admin-landmark-lat">Широта *</label>
                     <input class="input" type="number" id="admin-landmark-lat" step="0.0001" placeholder="55.0000">
                 </div>
                 <div class="field">
-                    <label for="admin-landmark-lgt">Долгота *</label>
-                    <input class="input" type="number" id="admin-landmark-lgt" step="0.0001" placeholder="55.0000">
+                    <label for="admin-landmark-lng">Долгота *</label>
+                    <input class="input" type="number" id="admin-landmark-lng" step="0.0001" placeholder="55.0000">
                 </div>
             </div>
             <div class="field">
@@ -203,7 +203,7 @@
             <button type="submit" class="btn" id="admin-landmark-submit">Добавить достопримечательность</button>
         </form>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="container footer__grid">
             <div>
                 <h2>Открой Оренбуржье</h2>

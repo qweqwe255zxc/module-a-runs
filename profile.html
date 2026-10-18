@@ -19,8 +19,8 @@
                 <a href="index.html#search-section" id="go-to-search">Поиск достопримечательностей</a>
                 <a href="catalog.html" id="nav-catalog">Каталог достопримечательностей</a>
                 <a href="profile.html" id="nav-profile">Личный кабинет</a>
-                <a href="login.html" id="nav-login" class="btn btn--sm">Войти</a>
-                <a href="register.html" id="nav-register" class="btn btn--sm btn--light">Регистрация</a>
+                <a href="#" id="nav-logout" class="btn btn--sm">Выйти</a>
+                <!-- <a href="register.html" id="nav-register" class="btn btn--sm btn--light">Регистрация</a> -->
             </nav>
         </div>
     </header>
@@ -93,7 +93,8 @@
             </div>
             <div class="field">
                 <label for="landmark-description">Описание *</label>
-                <textarea id="landmark-description" class="input" rows="4" placeholder="Опишите достопримечательность"></textarea>
+                <textarea id="landmark-description" class="input" rows="4"
+                    placeholder="Опишите достопримечательность"></textarea>
             </div>
             <div class="two-cols form">
                 <div class="field">
@@ -101,8 +102,8 @@
                     <input class="input" type="number" id="landmark-lat" step="0.0001" placeholder="55.0000">
                 </div>
                 <div class="field">
-                    <label for="landmark-lgt">Долгота *</label>
-                    <input class="input" type="number" id="landmark-lgt" step="0.0001" placeholder="55.0000">
+                    <label for="landmark-lng">Долгота *</label>
+                    <input class="input" type="number" id="landmark-lng" step="0.0001" placeholder="55.0000">
                 </div>
             </div>
             <div class="field">
@@ -112,7 +113,7 @@
             <button type="submit" class="btn" id="landmark-submit">Отправить на модерацию</button>
         </form>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="container footer__grid">
             <div>
                 <h2>Открой Оренбуржье</h2>
