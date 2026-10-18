@@ -80,6 +80,10 @@ select {
     color: inherit;
 }
 
+input[type='checkbox'] {
+    accent-color: var(--green);
+}
+
 /*  */
 /* Общие блоки */
 /*  */
@@ -292,6 +296,8 @@ input[type="file"]::file-selector-button {
 .header {
     background-color: var(--surface);
     border-bottom: 1px solid var(--line);
+    position: sticky;
+    top: 0;
 }
 
 .header__main {

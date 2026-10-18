@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Главная - Открой Оренбуржье</title>
+    <title>Вход - Открой Оренбуржье</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -24,7 +24,23 @@
             </nav>
         </div>
     </header>
-    <main class="container"></main>
+    <main class="container">
+        <form action="#" id="login-form" class="card form section narrow">
+            <h1 class="title">Вход</h1>
+            <div class="field">
+                <label for="login-email">E-mail *</label>
+                <input type="emial" id="login-email" class="input" placeholder="example@email.ru">
+            </div>
+            <div class="field error">
+                <label for="login-password">Пароль *</label>
+                <input type="password" id="login-password" class="input">
+                <p class="error-text">Неверный логин или пароль</p>
+            </div>
+            <button type="submit" id="login-submit" class="btn">Войти</button>
+            <a href="#" id="forgot-password-link" class="btn btn--light">Забыли пароль?</a>
+            <p class="muted">Еще нет аккаунта? <a href="register.html" class="link">Зарегистрироваться</a></p>
+        </form>
+    </main>
     <footer class="footer">
         <div class="container footer__grid">
             <div>

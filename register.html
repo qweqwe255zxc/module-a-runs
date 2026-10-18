@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Главная - Открой Оренбуржье</title>
+    <title>Регистрация - Открой Оренбуржье</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -24,7 +24,54 @@
             </nav>
         </div>
     </header>
-    <main class="container"></main>
+    <main class="container">
+        <form action="#" id="register-form" class="card form section narrow">
+            <h1 class="title">Регистрация</h1>
+            <div class="field error">
+                <label for="reg-email">E-mail *</label>
+                <input type="emial" id="reg-email" class="input" placeholder="example@email.ru">
+                <p class="error-text">Некорректный формат</p>
+            </div>
+            <div class="two-cols form">
+                <div class="field error">
+                    <label for="reg-lastname">Фамилия *</label>
+                    <input type="text" id="reg-lastname" class="input" placeholder="Иванов">
+                    <p class=" error-text">Обязательное поле</p>
+
+                </div>
+                <div class="field success">
+                    <label for="reg-firstname">Имя *</label>
+                    <input type="text" id="reg-firstname" class="input" placeholder="Иван">
+                    <p class="success-text">Отлично!</p>
+                </div>
+            </div>
+            <div class="two-cols form">
+                <div class="field">
+                    <label for="reg-birthdate">День рождения *</label>
+                    <input type="date" id="reg-birthdate" class="input">
+                </div>
+                <div class=" field">
+                    <label for="reg-phone">Номер телефона *</label>
+                    <input type="tel" id="reg-phone" class="input" placeholder="8-123-123-12-12">
+                </div>
+            </div>
+            <div class="two-cols form">
+                <div class=" field error">
+                    <label for="reg-password">Пароль *</label>
+                    <input type="password" id="reg-password" class="input">
+                    <p class="error-text">Пароли не совпадают</p>
+                </div>
+                <div class=" field">
+                    <label for="reg-password-confirm">Подтвердите пароль *</label>
+                    <input type="password" id="reg-password-confirm" class="input">
+                </div>
+            </div>
+            <label for="reg-consent" class="check"><input type="checkbox" id="reg-consent">Согласен на обработку
+                персональных данных</label>
+            <button type="submit" id="reg-submit" class="btn">Зарегистрироваться</button>
+            <p class="muted">Уже есть аккаунт? <a href="login.html" class="link">Войти</a></p>
+        </form>
+    </main>
     <footer class="footer">
         <div class="container footer__grid">
             <div>
